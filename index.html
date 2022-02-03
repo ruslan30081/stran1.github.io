@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220203082619">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-	<div class="wrapper">
-		<main class="page">
-			<section class="page__main main">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<section class="page__main main">
 				<div class="main__street">
 					<div class="main__black-block">
 						<div class="main__wrap">
-							<header class="header">
-								<div class="header__container">
-									<nav class="header__body">
-										<ul class="header__list">
-											<li class="header__link"><a href="#">Гипноз</a></li>
-											<li class="header__link"><a href="#">Психосоматика</a></li>
-											<li class="header__link"><a href="#">Нейроинжиниринг</a></li>
-											<li class="header__link"><a href="#">Обучение</a></li>
-											<li class="header__link"><a href="#">блог</a></li>
-										</ul>
-
-
-
-									</nav>
-								</div>
-							</header>
-							<div class="main__imageMan"><picture><source srcset="img/header/1.webp" type="image/webp"><img src="img/header/1.png" alt=""></picture>
+							@@include('html/_header.htm',{})
+							<div class="main__imageMan"><img src="@img/header/1.png" alt="">
 								<div class="main__help">
 									<div class="main__squere"></div>
 									<div class="main__text main__text_center">
@@ -43,17 +19,17 @@
 										<span>есть путь,</span><br>
 										который я готов пройти <br>
 										вместе с тобой…<br>
-									</div>
+										</div>
 									<div class="main__text">
 										Решить можно всё, <br>
 										<span>если ты готов</span> <br>
 										решать…
-									</div>
+										</div>
 								</div>
 							</div>
-
-
-
+							
+								
+							
 						</div>
 					</div>
 				</div>
@@ -64,13 +40,13 @@
 								Психосом<span class="orange-text">А</span>тика
 							</h1>
 							<div class="main__description">
-								Издревле люди отмечали взаимосвзь психики и телесных недугов.
-								Развитие науки, дало много объяснений этой взаимосвязи.
-								Появились методы анализа состояния, поиска корневых событий,
+								Издревле люди отмечали взаимосвзь психики и телесных недугов. 
+								Развитие науки, дало много объяснений этой взаимосвязи. 
+								Появились методы анализа состояния, поиска корневых событий, 
 								запускающих такое физиологическое изменение, которое трактутется <br>
 								нами, как болезнь. <br>
-								Можно привести краткий список проблем,имеющих
-								психосоматические проблемы:
+								Можно привести краткий список проблем,имеющих 
+								психосоматические  проблемы:
 							</div>
 							<ul class="main__list">
 								<li class="main__item">мигрени</li>
@@ -83,202 +59,153 @@
 								</i>
 							</ul>
 						</div>
-
-
-
+						
+						
+						
 					</div>
 				</div>
-			</section>
-			<section class="page__neuroeng neuroeng">
-				<div class="neuroeng__imageSide">
-					<picture><source srcset="img/section1/1.webp" type="image/webp"><img src="img/section1/1.png" alt=""></picture>
-				</div>
-				<div class="neuroeng__container _container">
-					<div class="neuroeng__item neuroeng__item_neuro">
-						<div class="neuroeng__title neuroeng__title_neuro">
-							Нейр<span class="orange-text">О</span>инжиниринг
-						</div>
-						<div class="neuroeng__description neuroeng__description_neuro">
-							О чём оно ? О том, как используя последние исследования науки о формировании памяти,
-							механизмов работы мозга, поменять ваши фильтры восприятия окружающего мира и себя
-							в нём. Те самые фильтры, которые делают вас сильными или слабыми, спокойными или
-							нервными, уверенным или сомневающимся. Поменять ваши роли во всех взаимосвязях.
-						</div>
+				</section>
+				<section class="page__neuroeng neuroeng">
+					<div class="neuroeng__imageSide">
+						<img src="@img/section1/1.png" alt="">
 					</div>
-					<div class="neuroeng__item neuroeng__item_hypnos">
-						<div class="neuroeng__title neuroeng__title_hypnos">
-							г<span class="orange-text">И</span>пноз
-						</div>
-						<div class="neuroeng__description neuroeng__description_hypnos">
-							Погружение в состояние гипноза даёт человеку отдых, сравнимый с несколькими днями
-							хорошего сна. Гипнотерапевт, используя определённые техники и своё состояние, способен
-							вызвать у вас его во время терапевтического сеанса.
-							гипнотерапия даёт отличные результаты в области работы с депрессиями, со сложными
-							психоэмоциональными состояниями. Решает большой спектр психосоматических проблем,
-							такие как тики, заикания, неврозы, фобии и многое другое
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<section class="page__training training">
-				<div class="training__image">
-					<picture><source srcset="img/section2/1.webp" type="image/webp"><img src="img/section2/1.png" alt=""></picture>
-				</div>
-				<div class="training__title">
-					обуч<span class="orange-text orange-text_training">E</span>ние
-				</div>
-				<div class="training__body">
-					<div class="training__imageMan"><picture><source srcset="img/section2/2.webp" type="image/webp"><img src="img/section2/2.png" alt=""></picture></div>
-					<div class="training__detailed-body">
-						<div class="training__item">
-							<div class="training__name">
-								Практическая <br>
-								психотерапия
+						<div class="neuroeng__container _container">
+							<div class="neuroeng__item neuroeng__item_neuro">
+								<div class="neuroeng__title neuroeng__title_neuro">
+									Нейр<span class="orange-text">О</span>инжиниринг
+								</div>
+								<div class="neuroeng__description neuroeng__description_neuro">
+									О чём оно ? О том, как используя последние исследования науки о формировании памяти, 
+									механизмов работы мозга, поменять ваши фильтры восприятия окружающего мира и себя 
+									в нём. Те самые фильтры, которые делают вас сильными или слабыми, спокойными или 
+									нервными, уверенным или сомневающимся. Поменять ваши роли во всех взаимосвязях.
+								</div>
 							</div>
-							<ul class="training__list">
-								<li class="training__list-item">Базис терапии</li>
-								<li class="training__list-item">Контекст клиента</li>
-								<li class="training__list-item">“Упрямый” клиент</li>
-								<li class="training__list-item">Смена фильтров</li>
-							</ul>
-						</div>
-						<div class="training__item">
-							<div class="training__name">
-								Гипноз
+							<div class="neuroeng__item neuroeng__item_hypnos">
+								<div class="neuroeng__title neuroeng__title_hypnos">
+									г<span class="orange-text">И</span>пноз
+								</div>
+								<div class="neuroeng__description neuroeng__description_hypnos">
+									Погружение в состояние гипноза даёт человеку отдых, сравнимый с несколькими днями
+									хорошего сна. Гипнотерапевт, используя определённые техники и своё состояние, способен 
+									вызвать у вас его во время терапевтического сеанса.
+									гипнотерапия даёт отличные результаты в области работы с депрессиями, со сложными 
+									психоэмоциональными состояниями. Решает большой спектр психосоматических проблем,
+									такие как тики, заикания, неврозы, фобии и многое другое 
+								</div>
 							</div>
-							<ul class="training__list">
-								<li class="training__list-item">Состояние гипнотерапевта</li>
-								<li class="training__list-item">Путь рядом с клиентом</li>
-								<li class="training__list-item">Директивный гипноз</li>
-								<li class="training__list-item">Эриксонновский гипноз</li>
-								<li class="training__list-item">Невербальный гипноз</li>
-							</ul>
-						</div>
-						<div class="training__item">
-							<div class="training__name">
-								Психосоматика
+
+					</div>
+				</section>
+				<section class="page__training training">
+					<div class="training__image">
+						<img src="@img/section2/1.png" alt="">
+					</div>
+					<div class="training__title">
+						обуч<span class="orange-text orange-text_training">E</span>ние 
+					</div>
+					<div class="training__body">
+						<div class="training__imageMan"><img src="@img/section2/2.png" alt=""></div>
+						<div class="training__detailed-body">
+							<div class="training__item">
+								<div class="training__name">
+									Практическая <br>
+									психотерапия
+									</div>
+									<ul class="training__list">
+										<li class="training__list-item">Базис терапии</li>
+										<li class="training__list-item">Контекст клиента</li>
+										<li class="training__list-item">“Упрямый” клиент</li>
+										<li class="training__list-item">Смена фильтров</li>
+									</ul>
 							</div>
-							<ul class="training__list">
-								<li class="training__list-item">нейробиология проблемы</li>
-								<li class="training__list-item">фактура нейромедиаторов</li>
-								<li class="training__list-item">детектирование корня</li>
-								<li class="training__list-item">Структурное изменение эмоций</li>
-								<li class="training__list-item">Забвение</li>
-							</ul>
+							<div class="training__item">
+								<div class="training__name">
+									Гипноз
+									</div>
+									<ul class="training__list">
+										<li class="training__list-item">Состояние гипнотерапевта</li>
+										<li class="training__list-item">Путь рядом с клиентом</li>
+										<li class="training__list-item">Директивный гипноз</li>
+										<li class="training__list-item">Эриксонновский гипноз</li>
+										<li class="training__list-item">Невербальный гипноз</li>
+									</ul>
+							</div>
+							<div class="training__item">
+								<div class="training__name">
+									Психосоматика
+									</div>
+									<ul class="training__list">
+										<li class="training__list-item">нейробиология проблемы</li>
+										<li class="training__list-item">фактура нейромедиаторов</li>
+										<li class="training__list-item">детектирование корня</li>
+										<li class="training__list-item">Структурное изменение эмоций</li>
+										<li class="training__list-item">Забвение</li>
+									</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="page__algoritm algoritm">
-				<div class="algoritm__title algoritm__title_communication">
-					Наш алгоритм <p>о<span class="orange-text orange-text_algoritm">Б</span>щения:</p>
-				</div>
-				<div class="algoritm__text algoritm__text_select">
-					<span class="orange-text orange-text_decision">Вы что-то хотите решить ?</span><br>
-					<p>обозначьте тему запроса:</p>
-					<div class="options">
-						<div class="options__item">
-							<input id="FormaSelect1" checked type="radio" value="right" name="hand" class="options__input">
-							<label for="FormaSelect1" class="options__label"><span>БОЛЕЗНЬ</span></label>
-						</div>
-						<div class="options__item">
-							<input id="FormaSelect2" type="radio" value="left" name="hand" class="options__input">
-							<label for="FormaSelect2" class="options__label"><span>внутреннее состоняние</span></label>
-						</div>
-						<div class="options__item">
-							<input id="FormaSelect3" type="radio" value="left" name="hand" class="options__input">
-							<label for="FormaSelect3" class="options__label"><span>проблемы в семье</span></label>
-						</div>
-						<div class="options__item">
-							<input id="FormaSelect4" type="radio" value="left" name="hand" class="options__input">
-							<label for="FormaSelect4" class="options__label"><span>дети</span></label>
-						</div>
-						<div class="options__item">
-							<input id="FormaSelect5" type="radio" value="left" name="hand" class="options__input">
-							<label for="FormaSelect5" class="options__label"><span>Бизнес, работа</span></label>
-						</div>
-						<div class="options__item">
-							<input id="FormaSelect6" type="radio" value="left" name="hand" class="options__input">
-							<label for="FormaSelect6" class="options__label"><span>социум</span></label>
+				</section>
+				<section class="page__algoritm algoritm">
+					<div class="algoritm__title algoritm__title_communication">
+						 Наш алгоритм  <p>о<span class="orange-text orange-text_algoritm">Б</span>щения:</p>
+					</div>
+					<div class="algoritm__text algoritm__text_select">
+						<span class="orange-text orange-text_decision">Вы что-то хотите решить ?</span><br>
+						<p>обозначьте тему запроса:</p>
+						<div class="options">
+							<div class="options__item">
+								<input  id="FormaSelect1" checked type="radio" value="right" name="hand"
+									class="options__input">
+								<label  for="FormaSelect1" class="options__label"><span>БОЛЕЗНЬ</span></label>
+							</div>
+							<div class="options__item">
+								<input id="FormaSelect2" type="radio" value="left" name="hand" class="options__input">
+								<label for="FormaSelect2" class="options__label"><span>внутреннее состоняние</span></label>
+							</div>
+							<div class="options__item">
+								<input id="FormaSelect3" type="radio" value="left" name="hand" class="options__input">
+								<label for="FormaSelect3" class="options__label"><span>проблемы в семье</span></label>
+							</div>
+							<div class="options__item">
+								<input id="FormaSelect4" type="radio" value="left" name="hand" class="options__input">
+								<label for="FormaSelect4" class="options__label"><span>дети</span></label>
+							</div>
+							<div class="options__item">
+								<input id="FormaSelect5"  type="radio" value="left" name="hand" class="options__input">
+								<label for="FormaSelect5"  class="options__label"><span>Бизнес, работа</span></label>
+							</div>
+							<div class="options__item">
+								<input id="FormaSelect6"  type="radio" value="left" name="hand" class="options__input">
+								<label for="FormaSelect6"  class="options__label"><span>социум</span></label>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="algoritm__options">
-
-				</div>
-				<div class="algoritm__body">
-
-					<form class="algoritm__form">
+					<div class="algoritm__options">
+						
+				   </div>
+					<div class="algoritm__body">
 						<div class="algoritm__container _container">
-							<div class="algoritm__text-form">
-								<p>задайте вопрос ></p>
-								<p>я уточнюсь ></p>
-								<p>мы поговорим 15 мин ></p>
-								<p>Вы решите нужна ли Вам моя помощь</p>
-							</div>
-							<textarea class="algoritm__textarea" placeholder="ваш вопрос:"></textarea>
+							<form class="algoritm__form">
+								<div class="algoritm__form-body">
+								<div class="algoritm__text-form">
+									<p>задайте вопрос ></p>    <p>я уточнюсь  ></p>     <p>мы поговорим 15 мин      ></p> <p>Вы решите нужна ли Вам моя помощь</p>   
+								</div>
+								<textarea class="algoritm__textarea" placeholder="ваш вопрос:"></textarea>
 							<div class="algoritm__input-body">
-								<input autocomplete="off" type="text" name="form[]" placeholder="ваше имя:" class="input">
-								<input autocomplete="off" type="text" name="form[]" placeholder="ваша почта:" class="input">
-								<input autocomplete="off" type="text" name="form[]" placeholder="ваш телефон:" class="input">
+								<input autocomplete="off" type="text" name="form[]"  placeholder="ваше имя:" class="input">
+								<input autocomplete="off" type="text" name="form[]"  placeholder="ваша почта:" class="input">
+								<input autocomplete="off" type="text" name="form[]"  placeholder="ваш телефон:" class="input">
 							</div>
 							<button class="algoritm__button" type="submit">отправить</button>
 						</div>
-					</form>
-
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__imageMan">
-				<picture><source srcset="img/footer/1.webp" type="image/webp"><img src="img/footer/1.png" alt=""></picture>
-				<div class="footer__container">
-					<div class="footer__questions">
-						<p class="footer__question"><span class="orange-text">Ну а как обычно ?</span> - Всегда необычно…</p>
-						<p class="footer__question"><span class="orange-text">Будет больно ?</span> - Иногда до слёз, но бывает до смеха …</p>
-						<p class="footer__question"><span class="orange-text">Может я без Вас ?</span> - Можете, но со мной быстрее…</p>
-						<p class="footer__question"><span class="orange-text">Каким я стану?</span> - Точно другим, уже никогда не станете прежним…</p>
-						<p class="footer__question"><span class="orange-text">И сколько это продлится ?</span> - не знаю… Все индивидуальны и нет общих рецептов</p>
-					</div>
-					<div class="footer__author">
-						<div class="footer__container _container">
-
-
-							<div class="footer__name">павел андреев</div>
-							<div class="footer__text">
-								<p>Клинический психолог</p>
-								<p>Медицинский психолог</p>
-								<p>Гипнотерапевт</p>
-								<p>Специалист по психосоматике</p>
-							</div>
-							<div class="footer__contact">
-								<a href="mailto:paveland@mail.ru" class="footer__link">paveland@mail.ru</a>
-								<a href="tel:+79257443549" class="footer__link">+7(925)744-35-49</a>
-								<a href="tel:+79257443549" class="footer__link">telegram +7(925)744-35-49</a>
-							</div>
+							</form>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div class="footer__tree">
-				<picture><source srcset="img/footer/2.webp" type="image/webp"><img src="img/footer/2.png" alt=""></picture>
-				<div class="header__container header__container_footer">
-					<nav class="header__body">
-						<ul class="header__list">
-							<li class="header__link"><a href="#">Гипноз</a></li>
-							<li class="header__link"><a href="#">Психосоматика</a></li>
-							<li class="header__link"><a href="#">Нейроинжиниринг</a></li>
-							<li class="header__link"><a href="#">Обучение</a></li>
-							<li class="header__link"><a href="#">блог</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="js/app.min.js?_v=20220203082619"></script>
-</body>
-
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
 </html>
