@@ -288,6 +288,9 @@ body {
   margin-bottom: 0px !important;
 }
 .header__link_blog {
+  color: #fcf8f8;
+  font-weight: 700;
+  letter-spacing: 3px;
   font-size: 0.625rem;
 }
 .header__link::after {
@@ -2207,6 +2210,11 @@ body {
     margin-bottom: 0.625rem;
   }
 }
+@media (max-width: 29.99875em) {
+  .article__name-date {
+    margin-left: 137px;
+  }
+}
 .article__date {
   margin: 0px 0px 0px auto;
 }
@@ -2256,6 +2264,11 @@ body {
 @media (max-width: 20em) {
   .article__emotion {
     margin-bottom: 0.9375rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .article__emotion {
+    margin-left: 137px;
   }
 }
 .article__description {
@@ -2342,6 +2355,12 @@ body {
   /* Выравнивание по левому краю */
   margin: 7px 7px 7px 0;
   /* Отступы вокруг картинки */
+}
+@media (max-width: 29.99875em) {
+  .leftimg {
+    margin: 7px 0px 7px 0;
+    /* Отступы вокруг картинки */
+  }
 }
 
 .footer__imageMan {
