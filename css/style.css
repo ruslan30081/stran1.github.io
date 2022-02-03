@@ -2488,7 +2488,7 @@ body {
 }
 .footer__questions {
   position: absolute;
-  top: -20px;
+  top: -26px;
 }
 @media (min-width: 76.25em) {
   .footer__questions {
@@ -2567,10 +2567,16 @@ body {
 .footer__tree {
   margin-top: -1266px;
 }
+@media (min-width: 76.25em) {
+  .footer__author {
+    margin-top: -855px;
+    margin-bottom: 824px;
+  }
+}
 @media (min-width: 47.99875em) {
   .footer__author {
-    margin-top: -568px;
-    margin-bottom: 568px;
+    margin-top: -764px;
+    margin-bottom: 770px;
   }
 }
 @media (max-width: 47.99875em) {
@@ -2581,8 +2587,8 @@ body {
 }
 @media (max-width: 29.99875em) {
   .footer__author {
-    margin-top: -347px;
-    margin-bottom: 524px;
+    margin-top: -403px;
+    margin-bottom: 561px;
   }
 }
 .footer__name {
